@@ -63,5 +63,35 @@ namespace BTL_QuanLiKTX
             Obj.ShowDialog();
             this.Close();
         }
+
+        private void btnQanLiPhong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormQuanLiPhong Obj = new FormQuanLiPhong();
+            Obj.ShowDialog();
+            this.Close();
+        }
+
+        private void btnQuanLiThietBi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormQuanLiThietBi Obj = new FormQuanLiThietBi();
+            Obj.ShowDialog();
+            this.Close();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormThongKe Obj = new FormThongKe();
+            Obj.ShowDialog();
+            this.Close();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            FormThemSV Obj = new FormThemSV();  
+            Obj.Show();
+        }
     }
 }

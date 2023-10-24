@@ -102,6 +102,7 @@
             this.btnThongKe.TabIndex = 6;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.TextOffset = new System.Drawing.Point(-7, 0);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnQuanLiThietBi
             // 
@@ -122,6 +123,7 @@
             this.btnQuanLiThietBi.TabIndex = 6;
             this.btnQuanLiThietBi.Text = "Quản lí thiết bị";
             this.btnQuanLiThietBi.TextOffset = new System.Drawing.Point(6, 0);
+            this.btnQuanLiThietBi.Click += new System.EventHandler(this.btnQuanLiThietBi_Click);
             // 
             // btnQuanLiHoaDon
             // 
@@ -182,6 +184,8 @@
             this.btnQanLiPhong.Size = new System.Drawing.Size(307, 87);
             this.btnQanLiPhong.TabIndex = 6;
             this.btnQanLiPhong.Text = "Quản lí phòng";
+            this.btnQanLiPhong.Click += new System.EventHandler(this.btnQanLiPhong_Click);
+            // 
             // btnQuanLiPhong
             // 
             this.btnQuanLiPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -317,6 +321,7 @@
             this.btnThem.Size = new System.Drawing.Size(180, 45);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // FormQuanLiSinhVien
             // 

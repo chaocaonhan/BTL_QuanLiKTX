@@ -48,5 +48,7 @@ namespace BTL_QuanLiKTX
             txtUserName.Text = "Admin";
             txtPassWord.Text = "UTC@123";
         }
+
+        
     }
 }

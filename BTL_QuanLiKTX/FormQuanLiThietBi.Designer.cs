@@ -57,6 +57,7 @@
             this.btnCloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCloseForm.TabIndex = 8;
             this.btnCloseForm.TabStop = false;
+            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
             // btnLogout
             // 
@@ -97,6 +98,7 @@
             this.btnThongKe.TabIndex = 6;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.TextOffset = new System.Drawing.Point(-7, 0);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnQuanLiThietBi
             // 
@@ -137,6 +139,7 @@
             this.btnQuanLiHoaDon.TabIndex = 6;
             this.btnQuanLiHoaDon.Text = "Quản lí hóa đơn";
             this.btnQuanLiHoaDon.TextOffset = new System.Drawing.Point(6, 0);
+            this.btnQuanLiHoaDon.Click += new System.EventHandler(this.btnQuanLiHoaDon_Click);
             // 
             // btnQuanLiSV
             // 
@@ -157,6 +160,7 @@
             this.btnQuanLiSV.TabIndex = 6;
             this.btnQuanLiSV.Text = "Quản lí SV";
             this.btnQuanLiSV.TextOffset = new System.Drawing.Point(-8, 0);
+            this.btnQuanLiSV.Click += new System.EventHandler(this.btnQuanLiSV_Click);
             // 
             // btnQanLiPhong
             // 
@@ -176,6 +180,7 @@
             this.btnQanLiPhong.Size = new System.Drawing.Size(307, 87);
             this.btnQanLiPhong.TabIndex = 6;
             this.btnQanLiPhong.Text = "Quản lí phòng";
+            this.btnQanLiPhong.Click += new System.EventHandler(this.btnQanLiPhong_Click);
             // 
             // btnQuanLiPhong
             // 

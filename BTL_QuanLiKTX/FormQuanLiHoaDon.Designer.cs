@@ -38,21 +38,13 @@
             this.btnQanLiPhong = new Guna.UI2.WinForms.Guna2Button();
             this.btnQuanLiPhong = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThem = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picUTCLogo = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +97,7 @@
             this.btnThongKe.TabIndex = 6;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.TextOffset = new System.Drawing.Point(-7, 0);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnQuanLiThietBi
             // 
@@ -125,6 +118,7 @@
             this.btnQuanLiThietBi.TabIndex = 6;
             this.btnQuanLiThietBi.Text = "Quản lí thiết bị";
             this.btnQuanLiThietBi.TextOffset = new System.Drawing.Point(6, 0);
+            this.btnQuanLiThietBi.Click += new System.EventHandler(this.btnQuanLiThietBi_Click);
             // 
             // btnQuanLiHoaDon
             // 
@@ -165,6 +159,7 @@
             this.btnQuanLiSV.TabIndex = 6;
             this.btnQuanLiSV.Text = "Quản lí SV";
             this.btnQuanLiSV.TextOffset = new System.Drawing.Point(-8, 0);
+            this.btnQuanLiSV.Click += new System.EventHandler(this.btnQuanLiSV_Click);
             // 
             // btnQanLiPhong
             // 
@@ -184,6 +179,7 @@
             this.btnQanLiPhong.Size = new System.Drawing.Size(307, 87);
             this.btnQanLiPhong.TabIndex = 6;
             this.btnQanLiPhong.Text = "Quản lí phòng";
+            this.btnQanLiPhong.Click += new System.EventHandler(this.btnQanLiPhong_Click);
             // 
             // btnQuanLiPhong
             // 
@@ -213,48 +209,6 @@
             this.label3.Size = new System.Drawing.Size(0, 22);
             this.label3.TabIndex = 2;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(506, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(87, 30);
-            this.textBox1.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(380, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Loại phòng :";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SlateBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(1142, 560);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 58);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Quản lí thiết bị ";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SlateBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(927, 560);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 58);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Xóa Sinh Viên";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -266,18 +220,6 @@
             this.label1.Size = new System.Drawing.Size(171, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "QLKTX   UTC";
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThem.Location = new System.Drawing.Point(466, 560);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(173, 58);
-            this.btnThem.TabIndex = 11;
-            this.btnThem.Text = "Thêm Sinh Viên";
-            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -300,28 +242,6 @@
             this.picUTCLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUTCLogo.TabIndex = 0;
             this.picUTCLogo.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(373, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(663, 449);
-            this.dataGridView1.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(700, 560);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 58);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Tính tiền";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // guna2GradientPanel1
             // 
@@ -352,13 +272,6 @@
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(1438, 798);
             this.Controls.Add(this.btnCloseForm);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1438, 798);
@@ -368,11 +281,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUTCLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -387,16 +298,9 @@
         private Guna.UI2.WinForms.Guna2Button btnQanLiPhong;
         private Guna.UI2.WinForms.Guna2Button btnQuanLiPhong;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox picUTCLogo;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
     }
 }

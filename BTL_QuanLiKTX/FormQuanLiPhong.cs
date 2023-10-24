@@ -31,6 +31,7 @@ namespace BTL_QuanLiKTX
             this.Hide();
             FormQuanLiSinhVien Obj=new FormQuanLiSinhVien();
             Obj.ShowDialog();
+            this.Close();
         }
 
         private void btnHomeClose_Click(object sender, EventArgs e)

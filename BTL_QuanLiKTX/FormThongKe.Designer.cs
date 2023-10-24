@@ -125,6 +125,7 @@
             this.btnQuanLiThietBi.TabIndex = 6;
             this.btnQuanLiThietBi.Text = "Quản lí thiết bị";
             this.btnQuanLiThietBi.TextOffset = new System.Drawing.Point(6, 0);
+            this.btnQuanLiThietBi.Click += new System.EventHandler(this.btnQuanLiThietBi_Click);
             // 
             // btnQuanLiHoaDon
             // 
@@ -145,6 +146,7 @@
             this.btnQuanLiHoaDon.TabIndex = 6;
             this.btnQuanLiHoaDon.Text = "Quản lí hóa đơn";
             this.btnQuanLiHoaDon.TextOffset = new System.Drawing.Point(6, 0);
+            this.btnQuanLiHoaDon.Click += new System.EventHandler(this.btnQuanLiHoaDon_Click);
             // 
             // btnQuanLiSV
             // 
@@ -165,6 +167,7 @@
             this.btnQuanLiSV.TabIndex = 6;
             this.btnQuanLiSV.Text = "Quản lí SV";
             this.btnQuanLiSV.TextOffset = new System.Drawing.Point(-8, 0);
+            this.btnQuanLiSV.Click += new System.EventHandler(this.btnQuanLiSV_Click);
             // 
             // btnQanLiPhong
             // 
@@ -184,6 +187,7 @@
             this.btnQanLiPhong.Size = new System.Drawing.Size(307, 87);
             this.btnQanLiPhong.TabIndex = 6;
             this.btnQanLiPhong.Text = "Quản lí phòng";
+            this.btnQanLiPhong.Click += new System.EventHandler(this.btnQanLiPhong_Click);
             // 
             // label3
             // 
